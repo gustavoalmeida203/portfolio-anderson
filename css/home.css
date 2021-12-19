@@ -1,0 +1,219 @@
+body{
+    font-family: var(--font-family);
+    background-color: black;
+}
+
+
+.container-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+
+
+
+
+/* Header */
+#header-container{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 6rem;
+    padding-left: 6rem;
+}
+
+header{ 
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition:.5s;
+}
+
+.fixed-header{
+    background-color: rgba(0, 0,0);
+    transition: .5s;
+    z-index: 99999;
+}
+
+
+.logo{
+    width: 3rem;
+}
+
+nav > ul{
+    display: flex;
+}
+
+
+.menu-item{
+    color: white;
+    font-weight: bold;
+}
+
+
+.menu-item{
+    margin-left: 2rem;
+}
+
+
+
+
+/* Main container */
+.container-main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    max-width: calc(1920px + 6rem);
+}
+
+main{
+    width: 40%;
+}
+
+
+.background-home-main{
+    width:60%;
+    height:100vh;
+}
+
+.backgroundteste{
+    width:100%;
+    max-width:60vw;
+    height: 100vh;
+    background-image: url(../Assets/background-home-page.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+
+
+
+/* Squares */
+.container-squares{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4rem;
+}
+
+.square{
+    background-color:red;
+    margin-right: .8rem;
+    height: .8rem;
+}
+
+.container-squares > .one{
+    width: 2rem;
+    background-color: var(--red);
+}
+.container-squares > .two{
+    width: 1rem;
+    background-color: var(--orange);
+}
+.container-squares > .three{
+    width: .8rem;
+    background-color: var(--yellow);
+}
+.container-squares > .four{
+    width: .8rem;
+    background-color:white;
+}
+
+
+
+
+/* Scroll Down Element */
+
+@-webkit-keyframes scroll-inner {
+    from {
+        margin-top: 15%;
+   }
+    to {
+        margin-top: 50%;
+   }
+}
+
+@keyframes scroll-inner {
+    from {
+        margin-top: 15%;
+   }
+    to {
+        margin-top: 50%;
+   }
+}
+
+@-webkit-keyframes scroll-mouse {
+    from {
+        margin-top: 0;
+   }
+    to {
+        margin-top: 15px;
+   }
+}
+
+@keyframes scroll-mouse {
+    from {
+        margin-top: 0;
+   }
+    to {
+        margin-top: 15px;
+   }
+}
+
+div.mouse-container {
+    position: absolute;
+    bottom: 4rem;
+
+}
+
+div.mouse {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    width: 30px;
+    height: 50px;
+    border: solid 1px white;
+    border-radius: 25px;
+    -webkit-animation: scroll-mouse 1.5s;
+    animation: scroll-mouse 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+div.mouse span.scroll-down {
+    display: block;
+    width: 5px;
+    height: 5px;
+    background: var(--yellow);
+    border-radius: 50%;
+    margin: 15% auto auto auto;
+    -webkit-animation: scroll-inner 1s;
+    animation: scroll-inner 1s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+}
+
+
+
+
+
+/* Section */
+/* Manipula as margens esquerdas do site */
+.section{
+    padding-left: 6rem;
+}
