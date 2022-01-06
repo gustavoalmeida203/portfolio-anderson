@@ -12,10 +12,6 @@ body{
 }
 
 
-
-
-
-
 /* Header */
 #header-container{
     position: fixed;
@@ -64,9 +60,6 @@ nav > ul{
     margin-left: 2rem;
 }
 
-
-
-
 /* Main container */
 .container-main{
     width: 100%;
@@ -81,7 +74,6 @@ main{
     width: 40%;
 }
 
-
 .background-home-main{
     width:60%;
     height:100vh;
@@ -94,12 +86,9 @@ main{
     background-image: url(../Assets/background-home-page.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:  center;
 
 }
-
-
-
 
 
 /* Squares */
@@ -216,4 +205,25 @@ div.mouse span.scroll-down {
 /* Manipula as margens esquerdas do site */
 .section{
     padding-left: 6rem;
+    
+}
+
+
+
+
+
+/* Section projets */
+.projects{
+    background-color:var(--background-color);
+    color: black;
+    height: 100vh;
+    
+    
+}
+
+
+.projects > h2{
+    padding-top: 6rem;
+    margin-bottom: 6rem;
+    color: var(--red);
 }
